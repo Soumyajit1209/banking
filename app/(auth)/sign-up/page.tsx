@@ -1,4 +1,4 @@
-import AuthForm from "@/components/Authform"
+import AuthForm from "@/components/AuthForm"
 
 const SignUp = async () => {
   return (
