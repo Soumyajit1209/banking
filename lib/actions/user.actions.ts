@@ -6,9 +6,9 @@ import { cookies } from "next/headers";
 import { encryptId, extractCustomerIdFromUrl, parseStringify } from "../utils";
 import { CountryCode, ProcessorTokenCreateRequest, ProcessorTokenCreateRequestProcessorEnum, Products } from "plaid";
 
-import { plaidClient } from '@/lib/plaid';
+import { plaidClient } from '@/lib/Plaid';
 import { revalidatePath } from "next/cache";
-import { addFundingSource, createDwollaCustomer } from "./dwolla.actions";
+import {addFundingSource, createDwollaCustomer} from "./dwolla.actions"
 
 const {
   APPWRITE_DATABASE_ID: DATABASE_ID,
